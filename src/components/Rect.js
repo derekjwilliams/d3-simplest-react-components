@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import * as d3 from 'd3';
 
-// line attributes
 const color = '#0000ff'
 const lineWidth = 10
 
@@ -11,7 +10,7 @@ const height = 100
 const drawingWidth = width + lineWidth
 const drawingHeight = height + lineWidth
 
-export default class Line extends Component {
+export default class Rect extends Component {
   static lineGenerator = d3.line()
   state = {
     values: [
@@ -26,13 +25,12 @@ export default class Line extends Component {
     return (
       <svg  style={svgStyle} width={drawingWidth} height={drawingHeight}>
         <g>
-          <path d={this.state.path} fill='none' stroke={color} strokeWidth={lineWidth} strokeLinecap='round' strokeLinejoin='round'></path>
+          <rect x={lineWidth/2} y={lineWidth/2} width={width} height={height} fill='none' strokeWidth={lineWidth} stroke={color} strokeLinecap='round' strokeLinejoin='round'/>
         </g>
-      </svg>
-    )
+      </svg>)
  }
   static getDerivedStateFromProps(nextProps, prevState) {
-    const path = Line.lineGenerator(prevState.values)
+    const path = Rect.lineGenerator(prevState.values)
     prevState = { ...prevState, path }
     return prevState
   }

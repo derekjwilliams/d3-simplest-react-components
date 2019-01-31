@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Line from './components/Line.js';
+import Rect from './components/Rect.js';
 import './App.css';
 
 export class App extends Component {
@@ -7,6 +8,7 @@ export class App extends Component {
     return (
       <div className="App">
         <Line></Line>
+        <Rect></Rect>
       </div>
     );
   }
