@@ -24,7 +24,11 @@ export default class LineWithProps extends Component {
     return (
       <svg style={svgStyle} width={drawingWidth} height={drawingHeight}>
         <g>
-          <path d={this.state.path} fill='none' stroke={color} strokeWidth={lineWidth} strokeLinecap='round' strokeLinejoin='round'></path>
+          <path d={this.state.path}
+            fill='none' stroke={color}
+            strokeWidth={lineWidth}
+            strokeLinecap='round'
+            strokeLinejoin='round'></path>
         </g>
       </svg>
     )
@@ -34,10 +38,8 @@ export default class LineWithProps extends Component {
     if (!nextProps.data) {
       return null
     }
-    const {data} = nextProps
-    console.log(prevState.values)
+    const { data } = nextProps
     const path = LineWithProps.lineGenerator(data)
-//    const path = LineWithProps.lineGenerator(prevState.values)
     prevState = { ...prevState, path }
     return prevState
   }

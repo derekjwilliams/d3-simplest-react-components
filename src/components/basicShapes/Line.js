@@ -24,7 +24,11 @@ export default class Line extends Component {
     return (
       <svg style={svgStyle} width={drawingWidth} height={drawingHeight}>
         <g>
-          <path d={this.state.path} fill='none' stroke={color} strokeWidth={lineWidth} strokeLinecap='round' strokeLinejoin='round'></path>
+          <path d={this.state.path}
+            fill='none' stroke={color}
+            strokeWidth={lineWidth}
+            strokeLinecap='round'
+            strokeLinejoin='round'></path>
         </g>
       </svg>
     )
