@@ -30,7 +30,9 @@
     transform: rotate(360deg);
   }
 }
-
+.App > div {
+  text-align: left;
+}
 section {
   text-align: left;
 }

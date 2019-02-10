@@ -6,30 +6,43 @@ import Pie from './components/basicShapes/Pie.js'
 import PieWithLabels from './components/basicShapes/PieWithLabels.js'
 import Rect from './components/basicShapes/Rect.js'
 import RadialLine from './components/basicShapes/RadialLine.js'
+
+import LineWithProps from './components/basicShapesWithProps/LineWithProps.js'
+
 import './App.css'
 
 export class App extends Component {
   render() {
     return (
       <div className="App">
-        <section>
-          <h1>Lines</h1>
-          <Line></Line>
-          <Curve></Curve>
-          <RadialLine></RadialLine>
-        </section>
+        <div>
+          <h1>Passing Data Using Props</h1>
+          <section>
+            <h2>Lines</h2>
+            <LineWithProps data={[[5, 5], [100, 105], [200, 5], [300, 105]]}></LineWithProps>
+          </section>
+        </div>
+        <div>
+        <h1>Very Basic Shapes</h1>
+          <section>
+            <h2>Lines</h2>
+            <Line></Line>
+            <Curve></Curve>
+            <RadialLine></RadialLine>
+          </section>
 
-        <section>
-          <h1>Rectangles</h1>
-          <Rect></Rect>
-        </section>
+          <section>
+            <h2>Rectangles</h2>
+            <Rect></Rect>
+          </section>
 
-        <section>
-          <h1>Circles</h1>
-          <Arc></Arc>
-          <Pie></Pie>
-          <PieWithLabels></PieWithLabels>
-        </section>
+          <section>
+            <h2>Circles</h2>
+            <Arc></Arc>
+            <Pie></Pie>
+            <PieWithLabels></PieWithLabels>
+          </section>
+        </div>
       </div>
     );
   }
