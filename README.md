@@ -1,5 +1,7 @@
 # d3-simplest-react-components
-Simple Demo for those just getting started with React and D3
+Simple Demo for those just getting started with React and D3.
+
+See https://d3indepth.com/shapes
 
 # React Bits
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
