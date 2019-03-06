@@ -20,6 +20,9 @@ export default class Line extends Component {
   }
 
   render() {
+    
+    
+    
     const svgStyle = { display: 'block' }
     return (
       <svg style={svgStyle} width={drawingWidth} height={drawingHeight}>

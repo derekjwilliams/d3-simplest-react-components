@@ -14,12 +14,12 @@ export default class RadialLine extends Component {
   state = {
     values: [
       [0, 80],
-      [Math.PI * 0.25, 80],
-      [Math.PI * 0.5, 30],
-      [Math.PI * 0.75, 80],
-      [Math.PI, 80],
-      [Math.PI * 1.25, 80],
-      [Math.PI * 1.5, 80],
+      [Math.PI * 0.25, 50],
+      [Math.PI * 0.25, 30],
+      [Math.PI * 0.75, 90],
+      [Math.PI, 100],
+      [Math.PI * 1.25, 110],
+      [Math.PI * 1.5, 128],
       [Math.PI * 1.75, 80],
       [Math.PI * 2, 80]
     ]
